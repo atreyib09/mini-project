@@ -6,9 +6,9 @@ data = pd.read_excel(file_path)
 data.columns = data.columns.str.strip().str.replace(r'[^\w\s]', '').str.replace('  ', ' ').str.lower()
 print(data.info())
 print(data.head())
-categorical_colums = data.select_dtypes(include='object').columns
+categorical_columns = data.select_dtypes(include='object').columns
 for Column in categorical_columns:
     print(f"Value counts for {Column}:")
-    print(data[column].value_counts())
+    print(data[Column].value_counts())
 print("\nSummary statistics for numerical data:")
 print(data.describe())
