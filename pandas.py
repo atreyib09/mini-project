@@ -8,7 +8,7 @@ print(data.info())
 print(data.head())
 categorical_cols = data.select_dtypes(include='object').columns
 for col in categorical_cols:
-    print(f"\nValue counts for {col}:")
+    print(f"Value counts for {col}:")
     print(data[col].value_counts())
 print("\nSummary statistics for numerical data:")
 print(data.describe())
