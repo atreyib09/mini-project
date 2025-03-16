@@ -1,0 +1,180 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+.navbar{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    position: sticky;
+    top:0;
+    cursor: pointer;
+
+}
+.logo{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    width: 70%;
+    border:3px solid black; 
+    border-radius: 150px;
+}
+.nav-list{ 
+    width: 50%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    font-size: 60px;;
+
+}
+
+.nav-list li{
+    list-style: none;
+    padding:30px 40px;
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color:aqua;
+    
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    
+}
+
+.rightnav{
+    width: 50%;
+    /* background-color: blue; */
+ 
+    text-align: right;
+    padding: 5px 30px;
+}
+
+#Search{
+    padding: 20px;
+    font-size:50px;
+    border:2px solid grey;
+    border-radius: 20px;
+}
+.background{
+    background-image: url('bg.jpg');
+    background-color:rgba(0, 0, 0, 0.7) ;
+    background-size : cover;
+    background-blend-mode: darken;
+    
+}
+
+
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    max-width: 100%;
+    margin:auto;
+    height: 80%;
+    width: 80%;
+    padding: 0px 30px;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    padding: 0px 30px;
+
+
+}
+.firstHalf{ 
+    width: 60%;
+    display: flex;
+    max-width: 80%;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    padding-right: 30px;
+
+}
+.text-biggest{
+    font-size: 150px;
+    max-width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.text-big{
+    font-size: 80px;
+    max-width: 100%;
+    text-align: left;
+}   
+.text-sm{
+    font-size:60px;
+    text-align: left;
+}
+.secondHalf{
+    width: 60%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+        
+}
+
+.secondHalf img{
+     width: 50%;
+     display: block;
+     margin:40px;   
+     align-items:center; 
+}
+
+.btn{
+    padding: 9px 30px;
+    /* margin: 7px 3px; */
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size:50px;
+    cursor: pointer;
+    background: none;
+    color: aqua; 
+    text-align:center;
+    align-self: flex-start;
+}
+.btn sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:80%;
+    margin:auto;
+    text-decoration: none;
+    color:beige;
+    padding-top:20%;
+    padding-left: 30px;
+    
+
+}
+.secTag text-big{
+    text-decoration: none;
+    font-size: 80px;
+}
+
+
+.paras{
+    padding:  0px 65px;
+}
+.thumbnail2 img{
+    width: 200%;
+}
