@@ -1,0 +1,109 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+
+/* Bigger Signup Container */
+.signup-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+/* Bigger Neon Border */
+.neon-border {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(90deg, red, yellow, green, blue, purple);
+  border-radius: 15px;
+  z-index: -1;
+  filter: blur(10px);
+  animation: neon-glow 3s infinite linear;
+}
+
+/* Glowing Effect */
+@keyframes neon-glow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Bigger Heading */
+h2 {
+  /* font-size: 60px; Bigger */
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Bigger Input Fields */
+input {
+  width: 90%;
+  padding: 10px; /* Bigger */
+  margin: 10px 0;
+  /* font-size: 40px; Bigger */
+  background: black;
+  border: 1px solid white;
+  border-radius:5px;
+  color: white;
+  outline: none;
+}
+
+/* Bigger Submit Button */
+button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, red, blue);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Links */
+.links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
